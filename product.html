@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Товары</h1>
+    <div>
+        <p>Burger - $4.99 <button onclick="addToCart('Burger', 4.99)">Добавить в корзину</button></p>
+        <p>Fries - $1.49 <button onclick="addToCart('Fries', 1.49)">Добавить в корзину</button></p>
+        <p>Hotdog - $3.49 <button onclick="addToCart('Hotdog', 3.49)">Добавить в корзину</button></p>
+        <p>Taco - $3.99 <button onclick="addToCart('Taco', 3.99)">Добавить в корзину</button></p>
+        <p>Pizza - $7.99 <button onclick="addToCart('Pizza', 7.99)">Добавить в корзину</button></p>
+        <p>Donut - $1.49 <button onclick="addToCart('Donut', 1.49)">Добавить в корзину</button></p>
+        <p>Popcorn - $1.99 <button onclick="addToCart('Popcorn', 1.99)">Добавить в корзину</button></p>
+        <p>Coke - $1.49 <button onclick="addToCart('Coke', 1.49)">Добавить в корзину</button></p>
+    </div>
+    <button onclick="viewOrder()">Просмотреть заказ</button>
+
+    <script>
+        function addToCart(item, price) {
+            // Логика добавления в корзину
+            console.log(`Добавлено: ${item} за $${price}`);
+        }
+
+        function viewOrder() {
+            // Логика просмотра заказа
+            console.log("Просмотр заказа");
+        }
+    </script>
+</body>
+</html>
